@@ -1,0 +1,58 @@
+import { useEffect } from "react";
+import gsap from "gsap";
+
+const Mousefollower = () => {
+      useEffect(() => {
+        const customCursor = document.querySelector(".custom-cursor");
+    
+        const handleMouseMove = (e) => {
+            const { clientX: x, clientY: y } = e;
+          customCursor.style.left = `${x}px`;
+          customCursor.style.top = `${y}px`;
+          customCursor.style.background = `white`;
+          customCursor.style.opacity = 1;
+        };
+    
+        window.addEventListener("mousemove", handleMouseMove);
+    
+        return () => {
+          window.removeEventListener("mousemove", handleMouseMove);
+        };
+      }, []);
+
+      const handleLogoEnter = () => {
+        const logo = document.querySelector('.logo-text');
+        if (logo) {
+          logo.textContent = 'UTSAV';
+        }
+      };
+      
+      const handleLogoExit = () => {
+        const logo = document.querySelector('.logo-text');
+        if (logo) {
+          logo.textContent = 'ウツサブ';
+        }
+      };
+        useEffect(()=>{
+        gsap.fromTo('.logo',{
+          x:-40,
+          opacity:0
+        },{
+          x:0,
+          opacity:1,
+          duration:1,
+        })
+        },[])
+  return (
+    <div className="">
+    <div className="logo transition-colors duration-200  absolute -translate-[50%] mix-blend-difference z-50 rounded-[50%] top-8 md:top-[4rem] left-[4rem] flex items-center justify-center" onMouseEnter={handleLogoEnter} onMouseLeave={handleLogoExit} >
+        <h4 className="mix-blend-difference text-sky-500 rounded-sm logo-text font-mono text-xl w-24 text-center tracking-widest">ウツサブ</h4>
+    </div>
+    <div className="opacity-0 w-20 h-20 custom-cursor fixed -translate-[50%] pointer-events-none mix-blend-difference z-cursor rounded-[50%] top-[4rem] left-[4rem] tablet:hidden flex items-center justify-center">
+        <h4 className="mix-blend-difference">ウツサブ</h4>
+    </div>
+    </div>
+  )
+}
+
+export default Mousefollower
