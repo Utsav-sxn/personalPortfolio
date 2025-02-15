@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital@0;1&display=swap');
 @import "tailwindcss";
 
 
@@ -10,6 +10,13 @@
   font-style: normal;
 }
 
+
+.inter-regular {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -57,4 +64,13 @@ body {
 }
 .clip-normal {
   clip-path: polygon(0% 0%, 0% 0%, 0% 0%);
+}
+
+.no-cursor {
+  cursor: default;
+}
+
+iframe {
+  transform: scale(1.005); /* Slight zoom to push scrollbar out */
+  transform-origin: top left;
 }

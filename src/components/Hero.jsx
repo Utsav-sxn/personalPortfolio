@@ -44,13 +44,12 @@ const Hero = () => {
   return (
     <section data-scroll-section className='px-8 sm:pl-[9rem] h-[40rem] sm:h-[100vh] relative top-0 overflow-hidden bg-[#000] selection:bg-orange-500 selection:text-black flex flex-col justify-center items-center md:flex-row gap-2'>
           {/* div 1 (image) */}
-          <div data-scroll data-scroll-speed="3" className='hero-sec-1 w-full md:w-[50%] p-[1rem]  lg:h-[70%] z-[1] flex flex-col justify-evenly text-start border-2 overflow-hidden rounded-sm'>
+          <div data-scroll data-scroll-speed="1.5" className='hero-sec-1 w-full md:w-[50%] p-[1rem]  lg:h-[70%] z-[1] flex flex-col justify-evenly text-start border-2 overflow-hidden rounded-sm'>
             <div>
               <h2 className='font-bold text-3xl'>Clean and Professional</h2>
               <p>
-                Crafting Digital Experiences
-                that are fast, functional, and visually stunning.
-                Let’s build the web, one pixel at a time.
+              Creating digital experiences that are seamless, engaging, and visually striking.
+              Let’s build the web, one pixel at a time.
               </p>
             </div>
             <div data-scroll data-scroll-speed="-2" className='mt-4 flex flex-col'>

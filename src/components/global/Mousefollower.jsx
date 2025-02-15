@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import gsap from "gsap";
+import { Link } from "react-router-dom";
 
 const Mousefollower = () => {
       useEffect(() => {
@@ -46,9 +47,11 @@ const Mousefollower = () => {
   return (
     <div className="">
     <div className="logo transition-colors duration-200  absolute -translate-[50%] mix-blend-difference z-50 rounded-[50%] top-8 md:top-[4rem] left-[4rem] flex items-center justify-center" onMouseEnter={handleLogoEnter} onMouseLeave={handleLogoExit} >
-        <h4 className="mix-blend-difference text-sky-500 rounded-sm logo-text font-mono text-xl w-24 text-center tracking-widest">ウツサブ</h4>
+    <Link to="/" className="">
+    <h4 className="mix-blend-difference text-sky-500 rounded-sm logo-text font-mono font-extrabold text-md w-24 text-center tracking-widest">ウツサブ</h4>
+    </Link>
     </div>
-    <div className="opacity-0 w-20 h-20 custom-cursor fixed -translate-[50%] pointer-events-none mix-blend-difference z-cursor rounded-[50%] top-[4rem] left-[4rem] tablet:hidden flex items-center justify-center">
+    <div className="opacity-0 w-20 h-20 custom-cursor fixed -translate-[50%] pointer-events-none mix-blend-difference z-cursor rounded-[50%] top-[4rem] left-[4rem] hidden md:flex items-center justify-center">
         <h4 className="mix-blend-difference">ウツサブ</h4>
     </div>
     </div>

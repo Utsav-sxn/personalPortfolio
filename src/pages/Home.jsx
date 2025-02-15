@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/src/locomotive-scroll.scss';
 import Hero from '../components/Hero';
-import About from '../components/About';
+import About from '../components/Sub';
 import ScrollProgressBar from '../components/global/Scrollprogress';
 
 const Home = () => {

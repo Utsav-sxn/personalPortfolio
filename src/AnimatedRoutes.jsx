@@ -9,14 +9,15 @@ const AnimatedRoutes = () => {
   const location = useLocation();
 
   return (
-    <AnimatePresence initial={false}> 
+    <AnimatePresence mode="wait"> 
       <Routes location={location} key={location.pathname}>
-        <Route path="/" index element={<PageWrapper><Home /></PageWrapper>} />
-        <Route path="/projects" element={<PageWrapper><Projects /></PageWrapper>} />
-        <Route path="/resume" element={<PageWrapper><Resume /></PageWrapper>} />
+        <Route path="/" index element={<PageWrapper key={location.pathname}><Home /></PageWrapper>} />
+        <Route path="/projects" element={<PageWrapper key={location.pathname}><Projects /></PageWrapper>} />
+        <Route path="/resume" element={<PageWrapper key={location.pathname}><Resume /></PageWrapper>} />
       </Routes>
     </AnimatePresence>
   );
+  
 };
 
 export default AnimatedRoutes;
