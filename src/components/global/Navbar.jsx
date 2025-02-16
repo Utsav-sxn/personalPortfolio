@@ -73,7 +73,6 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Desktop Navbar */}
       <div className="hidden sm:block">
         <nav
           ref={iconRefs}
@@ -124,7 +123,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navbar */}
-      <div className="sm:hidden fixed top-0 left-0 w-full bg-black text-white p-4 flex justify-between items-center z-50">
+      <div className="sm:hidden fixed top-0 left-0 w-full bg-black text-white hover:text-sky-500 p-4 flex justify-between items-center z-50">
         <Link to="/" className="text-lg font-bold">
           
         </Link>
@@ -142,7 +141,7 @@ const Navbar = () => {
               key={navlink.id}
               to={navlink.link}
               onClick={() => setIsMenuOpen(false)}
-              className={`text-lg font-medium ${active === navlink.name ? "text-cyan-400" : "text-white"
+              className={`text-lg font-medium hover:text-gray-400 ${active === navlink.name ? "text-sky-500" : "text-white"
                 }`}
             >
               {navlink.name}
