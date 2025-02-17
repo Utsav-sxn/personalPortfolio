@@ -14,7 +14,7 @@ export const navlinks = [
     },
     {
         id:3,
-        name:'Resume',
+        name:'Résumé',
         link:'/resume',
         path:'src/assets/document.svg'
     },

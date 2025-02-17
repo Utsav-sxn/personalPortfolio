@@ -1,23 +1,23 @@
 const PortfolioProject = () => {
 
-  const handleMouseEnter = () => {
-      const mouse = document.getElementsByClassName('custom-cursor');
-      mouse[0].style.display = 'none';
-    }
-    const handleMouseExit = () => {
-      const mouse = document.getElementsByClassName('custom-cursor');
-      mouse[0].style.display = 'flex';
-  }
+  // const handleMouseEnter = () => {
+  //     const mouse = document.getElementsByClassName('custom-cursor');
+  //     mouse[0].style.display = 'none';
+  //   }
+  //   const handleMouseExit = () => {
+  //     const mouse = document.getElementsByClassName('custom-cursor');
+  //     mouse[0].style.display = 'flex';
+  // }
 return (
-  <div className="h-full text-xl text-black xl:text-3xl font-medium pt-[3rem] selection:bg-sky-100 overflow-hidden">
-      <div data-scroll data-scroll-speed="1.2" className='w-fit h-[2rem] flex items-center relative top-[3rem]'>
+  <div className="h-full text-xl text-black xl:text-3xl font-medium pt-[3rem] selection:bg-sky-100 ">
+      <div className='w-fit h-[2rem] flex items-center relative top-[3rem]'>
         <h1>2. Portfolio Project.</h1>
         {/* <img src="./src/assets/appleLogo.svg" alt="" className='invert-100 w-8 h-8 -translate-y-[10%]' /> */
         }
         <p className="font-semibold">ツ</p>
       </div>
-      <div className='w-full h-fit bg-sky-50 rounded-lg mt-16 pr-[1rem] shadow-md shadow-[#D0E4F5] overflow-y-scroll lg:overflow-hidden'>
-        <div className="w-fit h-[80vh] sm:h-[100vh] relative left-4 top-4 flex ">
+      <div className='w-full h-fit bg-sky-50 rounded-4xl mt-16 pr-8 shadow-md shadow-[#D0E4F5] overflow-y-scroll lg:overflow-hidden'>
+        <div className="w-fit h-fit relative left-4 top-4 flex ">
           <div className="pr-0">
             <div>
             <h2 className='font-semibold text-sm xl:text-lg'>Technologies Used</h2>
@@ -49,10 +49,15 @@ return (
 
             </div>
             <div className='flex justify-center items-center h-fit xl:scale-75 relative top-10 xl:top-0'>
-              <img src="src\assets\PortfolioWebsiteFrontPage.png" alt="Portfolio website" className='sm:w-[70%] rounded-lg' />
+                  <p className="absolute -top-8 left-[50%] -translate-x-[50%] font-xl lg:text-4xl font-extrabold z-10 
+                            bg-gradient-to-b from-sky-400 to-sky-100 
+                            bg-clip-text text-transparent pointer-events-none text-center">
+                    Screenshot
+                  </p>
+              <img src="src\assets\PortfolioWebsiteFrontPage_11zon.jpg" alt="Portfolio website" className='sm:w-[70%] rounded-lg' />
             </div>
           </div>
-          <div className='flex-col items-start hidden sm:flex scale-75 lg:scale-100'>
+          {/* <div className='flex-col items-start hidden sm:flex scale-75 sm:scale-100'>
               <p className='relative text-sky-300'>Phone view.</p>
               <p className='relative text-sky-200 text-xl'>Live Website.</p>
             <div className="scale-75 relative w-[358px] no-cursor -top-20 xl:-top-5" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseExit}>
@@ -65,8 +70,13 @@ return (
                 alt="iPhone Frame"
                 className="absolute top-0 left-0 w-full h-auto pointer-events-none z-10"
               />
+            <p className="absolute -top-5 left-[50%] -translate-x-[50%] text-4xl font-extrabold z-10 
+                            bg-gradient-to-b from-sky-400 to-sky-100 
+                            bg-clip-text text-transparent pointer-events-none text-center">
+                Scrollable
+            </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

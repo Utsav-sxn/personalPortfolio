@@ -13,7 +13,7 @@ const Navbar = () => {
     const path = location.pathname;
     if (path === "/") setActive("Home");
     else if (path === "/projects") setActive("Projects");
-    else if (path === "/resume") setActive("Resume");
+    else if (path === "/resume") setActive("Résumé");
     else if (path === "/contact") setActive("Contact");
     else setActive("");
   }, [location]);
@@ -76,7 +76,7 @@ const Navbar = () => {
       <div className="hidden sm:block">
         <nav
           ref={iconRefs}
-          className="bg-neutral-800 navbar px-4 my-4 z-nav ml-[1rem] fixed top-[25%] mix-blend-difference rounded-[6rem]"
+          className="bg-[#202020] navbar px-4 my-4 z-nav ml-[1rem] fixed top-[25%] mix-blend-difference rounded-[6rem]"
           onMouseEnter={handleMouseEnterIcon}
           onMouseLeave={handleMouseLeaveIcon}
         >

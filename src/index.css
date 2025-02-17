@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital@0;1&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital@0;1&display=swap'); */
 @import "tailwindcss";
 
 
 
 .roboto-condensed-regular {
-  font-family: "Roboto Condensed", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -16,6 +15,15 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+html, body {
+  overflow: hidden !important;  /* Prevents default scrollbar */
+  height: 100%;                 /* Ensures Locomotive takes control */
+}
+
+[data-scroll-container] {
+  will-change: transform;
 }
 
 :root {

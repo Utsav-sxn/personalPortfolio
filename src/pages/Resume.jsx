@@ -1,8 +1,8 @@
-
+import Res from '../components/resume/Res'
 const Resume = () => {
   return (
     <div>
-        hi resume
+        <Res/>
     </div>
   )
 }

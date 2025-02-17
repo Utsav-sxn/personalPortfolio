@@ -64,14 +64,10 @@ const Mousefollower = () => {
           </h4>
         </Link>
       </div>
-
-      {/* Custom Cursor */}
-      <div className="opacity-0 w-20 h-20 custom-cursor fixed -translate-[50%] pointer-events-none mix-blend-difference z-cursor rounded-[50%] top-[4rem] left-[4rem] flex items-center justify-center">
-        <h4 className="mix-blend-difference">ウツサブ</h4>
+      <div className="opacity-0 w-14 h-14 custom-cursor fixed -translate-[50%] pointer-events-none mix-blend-difference z-cursor rounded-[50%] top-[4rem] left-[4rem] flex items-center justify-center">
+        <h4 className="mix-blend-difference">ツ</h4>
       </div>
-
-      {/* Copyright Mark */}
-      <div className="hidden md:flex absolute top-4 right-6 text-xs text-gray-400 font-mono tracking-wide z-cursor">
+      <div className="hidden md:flex absolute bottom-4 right-6 text-xs text-gray-400 font-mono tracking-wide z-cursor">
         © 2025 Utsav Saxena
       </div>
     </div>
