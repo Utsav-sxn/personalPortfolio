@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import FloatingTextEffect from "../FloatingTexts";
+import FloatingTextEffect from "./FloatingTexts";
 import Marquee from "react-fast-marquee";
 import Thoughtprocess from "../home/ThoughtProcess";
 
