@@ -18,11 +18,16 @@
 }
 
 html, body {
-  overflow: hidden !important;  /* Prevents default scrollbar */
+  overflow: hidden !important;  
   height: 100%;                 /* Ensures Locomotive takes control */
 }
 
 [data-scroll-container] {
+  min-height: 100vh;
+  overflow: visible;
+}
+
+[data-scroll-section] {
   will-change: transform;
 }
 
