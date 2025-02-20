@@ -59,7 +59,7 @@ const Mousefollower = () => {
         onMouseLeave={handleLogoExit}
       >
         <Link to="/" className="">
-          <h4 className="mix-blend-difference text-sky-500 rounded-sm logo-text font-mono font-extrabold text-md w-24 text-center tracking-widest">
+          <h4 className="mix-blend-difference text-white rounded-sm logo-text font-mono font-extrabold text-md w-24 text-center tracking-widest">
             ウツサブ
           </h4>
         </Link>

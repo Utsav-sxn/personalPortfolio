@@ -14,12 +14,6 @@ export const navlinks = [
     },
     {
         id:3,
-        name:'Résumé',
-        link:'/resume',
-        path:'src/assets/document.svg'
-    },
-    {
-        id:4,
         name:'Contact',
         link:'/contact',
         path:'src/assets/contact.svg'

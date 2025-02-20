@@ -61,7 +61,7 @@ const AppleProject = () => {
                             bg-clip-text text-transparent pointer-events-none text-center">
                     Screenshot
                   </p>
-                <img src="src\assets\AppleWebsiteFrontPage-pc_11zon.jpg" alt="Apple Website Pc" className='sm:w-[70%] rounded-lg' />
+                  <img src="src\assets\AppleWebsiteFrontPage-pc_11zon.jpg" alt="Apple Website Pc" className='sm:w-[70%] rounded-lg' />
               </div>
             </div>
           </div>

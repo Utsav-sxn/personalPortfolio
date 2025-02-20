@@ -9,26 +9,13 @@ const pageVariants = {
   };
   
 export default function PageWrapper({ children }) {
-    useEffect(() => {
-      setTimeout(() => {
-        const scroll = new LocomotiveScroll();
-        scroll.update();
-      }, 600);
-    }, []);
     return (
       <motion.div
         initial="initial"
         animate="animate"
         exit="exit"
         variants={pageVariants}
-        className="relative w-full h-full"
-        onAnimationComplete={() => {
-          setTimeout(() => {
-            const scroll = new LocomotiveScroll();
-            scroll.update();
-          }, 100);
-        }}
-      >
+        className="relative w-full h-full">
         {children}
       </motion.div>
     );

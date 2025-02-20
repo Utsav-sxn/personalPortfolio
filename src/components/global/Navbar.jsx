@@ -23,9 +23,8 @@ const Navbar = () => {
   const navIndicatorRefs = useRef([]);
 
   useLayoutEffect(() => {
-    gsap.fromTo(
+    gsap.to(
       ".nav-btns",
-      { x: -40, opacity: 0 },
       { x: 0, opacity: 1, duration: 0.4, ease: "power2.out", stagger: 0.2 }
     );
     gsap.from(".labels", {
@@ -76,7 +75,7 @@ const Navbar = () => {
       <div className="hidden sm:block">
         <nav
           ref={iconRefs}
-          className="bg-[#202020] navbar px-4 my-4 z-nav ml-[1rem] fixed top-[25%] mix-blend-difference rounded-[6rem]"
+          className="bg-[#black] navbar px-4 my-4 z-nav ml-[1rem] fixed top-[30%] mix-blend-difference rounded-[6rem]"
           onMouseEnter={handleMouseEnterIcon}
           onMouseLeave={handleMouseLeaveIcon}
         >
@@ -86,9 +85,8 @@ const Navbar = () => {
               key={navlink.id}
             >
               <div
-                className={`relative w-[50px] h-[50px] rounded-[50%] my-4 transition-all duration-200 hover:scale-110 z-20 ${active === navlink.name
-                    ? "active shadow-lg outline-2 outline-white outline-offset-4 bg-white"
-                    : "bg-gray-200"
+                className={`relative w-[50px] h-[50px] rounded-[50%] my-4 transition-all duration-200 hover:scale-110 z-20 bg-white ${active === navlink.name
+                    ? "active shadow-lg outline-2 outline-white outline-offset-4 " :''
                   }`}
                 onMouseEnter={() => handleMouseEnterLabel(index)}
                 onMouseLeave={() => handleMouseLeaveLabel(index)}
@@ -115,10 +113,10 @@ const Navbar = () => {
         </nav>
         <div
           ref={navIndicatorRefs}
-          className="opacity-0 fixed top-[49%] z-20 flex flex-row roboto-condensed-regular cursor- ml-[1rem] mix-blend-difference"
+          className="opacity-1 fixed top-[49%] z-20 flex flex-row roboto-condensed-regular cursor- ml-[1rem] mix-blend-difference"
         >
           <img src="src/assets/leftArr.svg" alt="nav" className="text-white" />
-          <p>Navigation</p>
+          <p className="tracking-widest font-semibold">NAV</p>
         </div>
       </div>
 

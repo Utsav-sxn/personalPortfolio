@@ -20,7 +20,7 @@ const FlowChart2D = () => {
             </motion.div>
             <p className="text-sm mt-2 text-black font-medium">{step}</p>
             {index < steps.length - 1 && (
-              <div className="hidden sm:block w-20 h-[2px] bg-black absolute top-6 left-12 z-0" />
+              <div className="hidden sm:block w-24 h-[2px] bg-black absolute top-6 left-12 z-0" />
             )}
           </div>
         ))}

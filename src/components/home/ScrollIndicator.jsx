@@ -22,7 +22,7 @@ const ScrollIndicator = ({ locomotiveScroll }) => {
 
   return (
     <motion.div
-      className="fixed left-1/2 top-[90vh] -translate-x-1/2 flex flex-col items-center text-white z-50"
+      className="fixed left-1/2 top-[90vh] -translate-x-1/2 flex flex-col items-center text-white z-20"
       initial={{ opacity: 1 }}
       animate={{
         opacity: isVisible ? 1 : 0,
