@@ -115,7 +115,7 @@ const Navbar = () => {
           ref={navIndicatorRefs}
           className="opacity-1 fixed top-[49%] z-20 flex flex-row roboto-condensed-regular cursor- ml-[1rem] mix-blend-difference"
         >
-          <img src="src/assets/leftArr.svg" alt="nav" className="text-white" />
+          <img src="/assets/leftArr.svg" alt="nav" className="text-white" />
           <p className="tracking-widest font-semibold">NAV</p>
         </div>
       </div>

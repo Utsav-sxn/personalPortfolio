@@ -34,8 +34,8 @@ const Projects = () => {
     <>
       <div ref={scrollRef} data-scroll-container className="w-full min-h-screen flex flex-col gap-[1rem] relative bg-[#f5f5f7] p-[1rem] sm:pl-[9rem]">
         <div data-scroll-section><AppleProject /></div>
-        <div data-scroll-section><PortfolioProject /></div>
         <div data-scroll-section><WorkwiseProject /></div>
+        <div data-scroll-section><PortfolioProject /></div>
         <div data-scroll-section><ZerodhaProject /></div>
         <div data-scroll-section className="h-10 flex items-center">
           <Marquee speed={60} gradient={false} pauseOnHover={true}>

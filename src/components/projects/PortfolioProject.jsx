@@ -1,19 +1,9 @@
 const PortfolioProject = () => {
 
-  // const handleMouseEnter = () => {
-  //     const mouse = document.getElementsByClassName('custom-cursor');
-  //     mouse[0].style.display = 'none';
-  //   }
-  //   const handleMouseExit = () => {
-  //     const mouse = document.getElementsByClassName('custom-cursor');
-  //     mouse[0].style.display = 'flex';
-  // }
 return (
   <div className="h-full text-xl text-black xl:text-3xl font-medium pt-[3rem] selection:bg-sky-100 ">
       <div className='w-fit h-[2rem] flex items-center relative top-[3rem]'>
-        <h1>2. Portfolio Project.</h1>
-        {/* <img src="./src/assets/appleLogo.svg" alt="" className='invert-100 w-8 h-8 -translate-y-[10%]' /> */
-        }
+        <h1>3. Portfolio Project.</h1>
         <p className="font-semibold">ツ</p>
       </div>
       <div className='w-full h-fit bg-sky-50 rounded-4xl mt-16 pr-8 shadow-md shadow-[#D0E4F5] overflow-y-scroll lg:overflow-hidden'>
@@ -54,29 +44,9 @@ return (
                             bg-clip-text text-transparent pointer-events-none text-center">
                     Screenshot
                   </p>
-              <img src="src\assets\PortfolioWebsiteFrontPage_11zon.jpg" alt="Portfolio website" className='sm:w-[70%] rounded-lg' />
+              <img src="\assets\PortfolioWebsiteFrontPage_11zon.jpg" alt="Portfolio website" className='sm:w-[70%] rounded-lg' />
             </div>
           </div>
-          {/* <div className='flex-col items-start hidden sm:flex scale-75 sm:scale-100'>
-              <p className='relative text-sky-300'>Phone view.</p>
-              <p className='relative text-sky-200 text-xl'>Live Website.</p>
-            <div className="scale-75 relative w-[358px] no-cursor -top-20 xl:-top-5" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseExit}>
-              <iframe
-                src="http://localhost:5173"
-                className="w-[308px] h-[664px] relative z-0 left-6 top-5 rounded-[3.6rem] apple"
-              />
-              <img
-                src="src/assets/iphone16frame.png"
-                alt="iPhone Frame"
-                className="absolute top-0 left-0 w-full h-auto pointer-events-none z-10"
-              />
-            <p className="absolute -top-5 left-[50%] -translate-x-[50%] text-4xl font-extrabold z-10 
-                            bg-gradient-to-b from-sky-400 to-sky-100 
-                            bg-clip-text text-transparent pointer-events-none text-center">
-                Scrollable
-            </p>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

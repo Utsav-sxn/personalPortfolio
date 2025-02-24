@@ -34,7 +34,7 @@ const ScrollIndicator = ({ locomotiveScroll }) => {
       }}
     >
       <p className="text-sm font-medium roboto-condensed-regular tracking-widest">SCROLL</p>
-      <img src="src\assets\downArr.svg" alt="" />
+      <img src="\assets\downArr.svg" alt="" />
     </motion.div>
   );
 };
