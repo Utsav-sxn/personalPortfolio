@@ -3,7 +3,7 @@ const PortfolioProject = () => {
 return (
   <div className="h-full text-xl text-black xl:text-3xl font-medium pt-[3rem] selection:bg-sky-100 ">
       <div className='w-fit h-[2rem] flex items-center relative top-[3rem]'>
-        <h1>3. Portfolio Project.</h1>
+        <h1>Portfolio Project.</h1>
         <p className="font-semibold">ツ</p>
       </div>
       <div className='w-full h-fit bg-sky-50 rounded-4xl mt-16 pr-8 shadow-md shadow-[#D0E4F5] overflow-y-scroll lg:overflow-hidden'>

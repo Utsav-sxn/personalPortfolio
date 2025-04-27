@@ -14,10 +14,24 @@ const Mousefollower = () => {
       customCursor.style.opacity = 1;
     };
 
+    const handleMouseOut = (e) => {
+      if (!e.relatedTarget || e.relatedTarget === document.documentElement) {
+        customCursor.style.opacity = 0;
+      }
+    };
+
+    const handleWindowBlur = () => {
+      customCursor.style.opacity = 0;
+    };
+
     window.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseout", handleMouseOut);
+    window.addEventListener("blur", handleWindowBlur);
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseout", handleMouseOut);
+      window.removeEventListener("blur", handleWindowBlur);
     };
   }, []);
 

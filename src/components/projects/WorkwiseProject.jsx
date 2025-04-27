@@ -4,7 +4,7 @@ const WorkwiseProject = () => {
     <div  className="h-full text-xl text-black xl:text-3xl font-medium pt-[3rem] selection:bg-[#e6c9f1] ">
         <div className='w-fit h-[2rem] flex flex-col items-start relative top-[3rem]'>
         <div className="flex items-center text-sm md:text-2xl">
-          <h1>2. Workwise Website Revamp.</h1>
+          <h1>Workwise Website Revamp.</h1>
           <img src="\assets\workwiseLogo.webp" alt="" className='w-20 h-10 mix-blend-color rounded-sm' />
         </div>
         <div>

@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import FloatingTextEffect from "./FloatingTexts";
 import Marquee from "react-fast-marquee";
 import Thoughtprocess from "../home/ThoughtProcess";
+import { handles } from '../../constants/handleslink'
 
 const Sub = () => {
   const marqueeComponent = useMemo(() => (
@@ -26,9 +27,9 @@ const Sub = () => {
 
           <div className="shadow-md p-[1rem] roboto-condensed-regular rounded-sm flex justify-around text-sm md:text-xl w-full">
             <p className="font-semibold">Handles</p>
-            <a href="https://www.linkedin.com/in/utsvsxn1" target="blank">LinkedIn</a>
-            <a href="https://github.com/Utsav-sxn" target="_blank">GitHub</a>
-            <a href="https://leetcode.com/u/Utsav1101/" target="blank">LeetCode</a>
+            {handles.map((handle,ind)=>(
+              <a href={handle.url} target="_blank" key={ind}>{handle.name}</a>
+            ))}
           </div>
         </div>
 

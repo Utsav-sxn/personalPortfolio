@@ -6,6 +6,7 @@ import AppleProject from '../components/projects/AppleProject';
 import PortfolioProject from '../components/projects/PortfolioProject';
 import WorkwiseProject from '../components/projects/WorkwiseProject';
 import ZerodhaProject from '../components/projects/ZerodhaProject';
+import AIFightingArenaProject from '../components/projects/AIFightingArena';
 
 const Projects = () => {
   const scrollRef = useRef(null);
@@ -34,6 +35,7 @@ const Projects = () => {
     <>
       <div ref={scrollRef} data-scroll-container className="w-full min-h-screen flex flex-col gap-[1rem] relative bg-[#f5f5f7] p-[1rem] sm:pl-[9rem]">
         <div data-scroll-section><AppleProject /></div>
+        <div data-scroll-section><AIFightingArenaProject /></div>
         <div data-scroll-section><WorkwiseProject /></div>
         <div data-scroll-section><PortfolioProject /></div>
         <div data-scroll-section><ZerodhaProject /></div>

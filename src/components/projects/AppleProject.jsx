@@ -4,7 +4,7 @@ const AppleProject = () => {
   return (
     <div className="h-fit text-xl text-black xl:text-3xl font-medium pt-[3rem] selection:bg-slate-200 ">
         <div className='w-fit h-[2rem] flex items-center relative top-[3rem]'>
-          <h1>1. Apple Clone.</h1>
+          <h1>Apple Clone.</h1>
           <img src="/assets/appleLogo.svg" alt="" className='invert-100 w-8 h-8 -translate-y-[10%]' />
         </div>
         <div className='w-fit relative top-12'>

@@ -3,7 +3,7 @@ const PortfolioProject = () => {
   return (
     <div  className="h-full text-xl text-black xl:text-3xl font-medium pt-[3rem] selection:bg-orange-100 ">
         <div className='w-fit h-[2rem] flex items-center relative top-[3rem]'>
-          <h1>4. Zerodha Kite Inspired Website.</h1>
+          <h1>Zerodha Kite Inspired Website.</h1>
           <img src="\assets\kiteLogo.svg" alt="" className=' w-8 h-6 -translate-y-[10%]' />
         </div>
         <div className='w-full h-fit bg-orange-50 rounded-4xl mt-16 pr-8 shadow-md shadow-[#f5d0d0] overflow-y-scroll lg:overflow-hidden'>
